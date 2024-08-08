@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the build method from the ProductView class, for the Dart programming language.">
+  <title>build method - ProductView class - product_view library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">poscaja</a></li>
+    <li><a href="../../app_presentation_modules_products_views_product_view/app_presentation_modules_products_views_product_view-library.html">app&#47;presentation&#47;modules&#47;products&#47;views&#47;product_view.dart</a></li>
+    <li><a href="../../app_presentation_modules_products_views_product_view/ProductView-class.html">ProductView</a></li>
+    <li class="self-crumb">build method</li>
+  </ol>
+  <div class="self-name">build</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="app_presentation_modules_products_views_product_view&#47;ProductView-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-method">build</span> method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+  <div>
+    <ol class="annotation-list">
+        <li>@<a href="https://api.flutter.dev/flutter/dart-core/override-constant.html">override</a></li>
+    </ol>
+  </div>
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>
+<span class="name ">build</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="build-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span></li>
+</ol>)
+
+      <div class="features"><span class="feature">override</span></div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Describes the part of the user interface represented by this widget.</p>
+<p>The framework calls this method when this widget is inserted into the tree
+in a given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a> and when the dependencies of this widget change
+(e.g., an <a href="https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html">InheritedWidget</a> referenced by this widget changes). This
+method can potentially be called in every frame and should not have any side
+effects beyond building a widget.</p>
+<p>The framework replaces the subtree below this widget with the widget
+returned by this method, either by updating the existing subtree or by
+removing the subtree and inflating a new subtree, depending on whether the
+widget returned by this method can update the root of the existing
+subtree, as determined by calling <a href="https://api.flutter.dev/flutter/widgets/Widget/canUpdate.html">Widget.canUpdate</a>.</p>
+<p>Typically implementations return a newly created constellation of widgets
+that are configured with information from this widget's constructor and
+from the given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a>.</p>
+<p>The given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a> contains information about the location in the
+tree at which this widget is being built. For example, the context
+provides the set of inherited widgets for this location in the tree. A
+given widget might be built with multiple different <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a>
+arguments over time if the widget is moved around the tree or if the
+widget is inserted into the tree in multiple places at once.</p>
+<p>The implementation of this method must only depend on:</p>
+<ul>
+<li>the fields of the widget, which themselves must not change over time,
+and</li>
+<li>any ambient state obtained from the <code>context</code> using
+<a href="https://api.flutter.dev/flutter/widgets/BuildContext/dependOnInheritedWidgetOfExactType.html">BuildContext.dependOnInheritedWidgetOfExactType</a>.</li>
+</ul>
+<p>If a widget's <a href="../../app_presentation_modules_products_views_product_view/ProductView/build.html">build</a> method is to depend on anything else, use a
+<a href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a> instead.</p>
+<p>See also:</p>
+<ul>
+<li><a href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget</a>, which contains the discussion on performance considerations.</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">@override
+Widget build(BuildContext context) {
+  String oldDiscount = &#39;0.00&#39;;
+  final code = &#39;&#39;.obs;
+  final productController = Get.put(ProductsController());
+  final coinsController = Get.put(CoinController()..getCoins());
+  final Rxn&lt;Product&gt; product = Rxn();
+
+  final isVisible = true.obs;
+  final productCodeController = TextEditingController().obs;
+  final productNameController = TextEditingController().obs;
+  final productStockController = TextEditingController(text: &#39;0&#39;).obs;
+  final productPriceController = TextEditingController(text: &#39;0.00&#39;).obs;
+  final productDiscountController = TextEditingController(text: &#39;0.00&#39;).obs;
+
+  final stockFocusNode = FocusNode().obs;
+  final priceFocusNode = FocusNode().obs;
+  final discountFocusNode = FocusNode().obs;
+
+  stockFocusNode.value.addIntTextFieldListener(productStockController.value);
+  priceFocusNode.value
+      .addDoubleTextFieldListener(productPriceController.value);
+  discountFocusNode.value
+      .addDoubleTextFieldListener(productDiscountController.value);
+
+  final theme = Theme.of(context);
+  final textTheme = theme.textTheme;
+  final screenSize = MediaQuery.sizeOf(context);
+  final dataRepository = Repositories.data;
+  final account = dataRepository.account;
+
+  if (Get.arguments != null) {
+    product.value = Get.arguments[&#39;product&#39;] as Product;
+    productCodeController.value.text = product.value!.code;
+    productNameController.value.text = product.value!.name;
+    productStockController.value.text = product.value!.stock.toString();
+    productPriceController.value.text = product.value!.price.toString();
+    productDiscountController.value.text = product.value!.discount.toString();
+    isVisible.value = product.value!.isVisible;
+  }
+
+  Product initProduct() =&gt; Product(
+        code: productCodeController.value.text.trimRight(),
+        name: productNameController.value.text.trimRight(),
+        stock: int.parse(productStockController.value.text),
+        price: double.parse(productPriceController.value.text),
+        coinType: DropdownButtonCoinType.value,
+        isVisible: isVisible.value,
+        createdBy: account!.username,
+        discount: (productDiscountController.value.text != &#39;&#39;)
+            ? double.parse(productDiscountController.value.text)
+            : 0,
+      );
+
+  void requestBack() {
+    showDialog(
+      context: context,
+      builder: (context) =&gt; WarningDialog(
+        warning: &#39;¿Está seguro que desea descartar los cambios?&#39;,
+        onAccept: () async {
+          await productController.getProducts();
+          Get.offAndToNamed(Routes.products);
+        },
+      ),
+    );
+  }
+
+  return OrientationBuilder(builder: (context, orientation) {
+    final isLandscape = orientation == Orientation.landscape;
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) {
+        if (didPop) return;
+        requestBack();
+      },
+      child: Scaffold(
+        appBar: MyAppBar(
+          title: &#39;Productos&#39;,
+          onBack: () async {
+            requestBack();
+          },
+          actions: [
+            IconButton(
+                onPressed: () {
+                  showMaterialModalBottomSheet(
+                    context: context,
+                    builder: (context) {
+                      final mobileScannerController =
+                          MobileScannerController();
+
+                      final double scanWindowWidth =
+                          MediaQuery.of(context).size.width * 0.6;
+                      final double scanWindowHeight =
+                          MediaQuery.of(context).size.height * 0.2;
+                      final double scanWindowLeft =
+                          (MediaQuery.of(context).size.width -
+                                  scanWindowWidth) &#47;
+                              2; &#47;&#47; Centra horizontalmente
+                      final double scanWindowTop =
+                          (MediaQuery.of(context).size.height -
+                                  scanWindowHeight) &#47;
+                              2;
+
+                      return Scaffold(
+                        body: Stack(children: [
+                          MobileScanner(
+                            controller: mobileScannerController,
+                            scanWindow: Rect.fromLTWH(
+                              scanWindowLeft,
+                              scanWindowTop,
+                              scanWindowWidth,
+                              scanWindowHeight,
+                            ),
+                            onDetect: (barcodes) async {
+                              if (barcodes.raw != null) {
+                                final codeList = barcodes.raw! as List;
+                                final codeMap = codeList.first as Map;
+                                code.value = codeMap[&#39;rawValue&#39;].toString();
+                                productCodeController.value.text = code.value;
+                                await mobileScannerController.dispose();
+                                Get.back();
+                              }
+                            },
+                          ),
+                          Positioned(
+                            left: scanWindowLeft,
+                            top: scanWindowTop,
+                            child: Container(
+                              width: scanWindowWidth,
+                              height: scanWindowHeight,
+                              decoration: BoxDecoration(
+                                border:
+                                    Border.all(color: Colors.grey, width: 3),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            left: scanWindowLeft,
+                            top: scanWindowTop + scanWindowHeight + 10,
+                            child: Obx(
+                              () =&gt; Text(
+                                code.value == &#39;&#39;
+                                    ? &#39;Enfoca el código aquí&#39;
+                                    : productController.productCode.value,
+                                style: TextStyle(
+                                    color: Colors.grey, fontSize: 16),
+                              ),
+                            ),
+                          ),
+                        ]),
+                      );
+                    },
+                  );
+                  &#47;&#47;Get.toNamed(Routes.barcodeScanner);
+                },
+                icon: Icon(Icons.barcode_reader))
+          ],
+        ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: isLandscape
+                ? EdgeInsets.symmetric(
+                    horizontal: screenSize.width * 0.1, vertical: 10)
+                : const EdgeInsets.symmetric(horizontal: 28),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                if (isLandscape) const SizedBox(height: 10),
+                Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          &#39;Visible&#39;,
+                          style: textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        Obx(
+                          () =&gt; Checkbox(
+                              visualDensity: VisualDensity.compact,
+                              value: isVisible.value,
+                              onChanged: (value) =&gt; isVisible.value = value!),
+                        ),
+                      ],
+                    ),
+                    MyTextField(
+                      textCapitalization: TextCapitalization.sentences,
+                      inputFormatters: [
+                        FilteringTextInputFormatter.allow(
+                            RegExp(r&#39;[a-zA-Z0-9 áéíóúÁÉÍÓÚÑñ]&#39;)),
+                      ],
+                      controller: productNameController.value,
+                      labelText: &#39;Nombre del producto*&#39;,
+                      onChanged: (value) {
+                        if (productNameController.value.text
+                            .startsWith(&#39; &#39;)) {
+                          String newText =
+                              productNameController.value.text.trimLeft();
+                          productNameController.value.text = newText;
+
+                          productNameController.value.selection =
+                              TextSelection.fromPosition(
+                            TextPosition(offset: newText.length),
+                          );
+                        }
+                      },
+                    ),
+                    const SizedBox(
+                      height: 16,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: MyTextField(
+                            onTap: () {
+                              if (productPriceController.value.text ==
+                                  &#39;0.00&#39;) {
+                                productPriceController.value.clear();
+                              }
+                            },
+                            onChanged: (value) {},
+                            focusNode: priceFocusNode.value,
+                            controller: productPriceController.value,
+                            labelText: &#39;Precio del producto*&#39;,
+                            keyboardType: TextInputType.numberWithOptions(
+                                decimal: true),
+                            inputFormatters: [
+                              FilteringTextInputFormatter.allow(
+                                RegExp(r&#39;^\d+\.?\d{0,2}&#39;),
+                              ),
+                            ],
+                            &#47;&#47; TODO: Coins
+                          ),
+                        ),
+                        SizedBox(
+                          width: 48,
+                        ),
+                        SizedBox(
+                          width: 60,
+                          child: Obx(
+                            () =&gt; DropdownButtonCoinType(
+                              textTheme: textTheme,
+                              items: coinsController.coins.value
+                                  ?.map((e) =&gt; e.shortName)
+                                  .toList(),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    MyTextField(
+                      controller: productStockController.value,
+                      labelText: &#39;Cantidad en existencia*&#39;,
+                      maxLength: 10,
+                      focusNode: stockFocusNode.value,
+                      onTap: () {
+                        if (productStockController.value.text == &#39;0&#39;) {
+                          productStockController.value.clear();
+                        }
+                      },
+                      keyboardType: TextInputType.number,
+                      inputFormatters: [
+                        FilteringTextInputFormatter.allow(
+                          RegExp(r&#39;^\d+&#39;),
+                        )
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    MyTextField(
+                      controller: productCodeController.value,
+                      maxLength: 30,
+                      inputFormatters: Validations.alphaNumericNotSpaces(),
+                      readOnly: product.value?.code != null,
+                      labelText: &#39;Código del producto*&#39;,
+                      onChanged: (value) {
+                        if (productCodeController.value.text
+                            .startsWith(&#39; &#39;)) {
+                          String newText =
+                              productCodeController.value.text.trimLeft();
+                          productCodeController.value.text = newText;
+
+                          productCodeController.value.selection =
+                              TextSelection.fromPosition(
+                                  TextPosition(offset: newText.length));
+                        }
+                      },
+                    ),
+                    MyTextField(
+                      onTap: () {
+                        if (productDiscountController.value.text == &#39;0.00&#39;) {
+                          productDiscountController.value.clear();
+                        }
+                      },
+                      onChanged: (value) {
+                        if (value != &#39;&#39; &amp;&amp; double.parse(value) &gt; 99.99) {
+                          MyToast.showToast(MyToastType.error,
+                              &quot;El descuento no puede exceder 99.99%&quot;);
+                          productDiscountController.value.text = oldDiscount;
+                          return;
+                        }
+                        oldDiscount = value;
+                      },
+                      controller: productDiscountController.value,
+                      labelText: &#39;Descuento (%)&#39;,
+                      focusNode: discountFocusNode.value,
+                      keyboardType:
+                          TextInputType.numberWithOptions(decimal: true),
+                      inputFormatters: [
+                        FilteringTextInputFormatter.allow(
+                          RegExp(r&#39;^(100|\d{1,2})\.?\d{0,2}&#39;),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                SizedBox(height: isLandscape ? 20 : 32),
+                Padding(
+                  padding: isLandscape
+                      ? EdgeInsets.symmetric(
+                          horizontal: screenSize.width * 0.15)
+                      : EdgeInsets.zero,
+                  child: product.value == null
+                      ? MyButton.expandable(
+                          height: null,
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          text: &#39;Crear&#39;,
+                          fontSize: 20,
+                          onPressed: () async {
+                            if (productNameController.value.text.isEmpty ||
+                                productCodeController.value.text.isEmpty) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                  MySnackBar(
+                                      screenSize: MediaQuery.sizeOf(context),
+                                      isLandscape: isLandscape,
+                                      text: &quot;Faltan campos por rellenar&quot;));
+
+                              return;
+                            }
+                            if (productPriceController.value.text == &#39;0.00&#39; ||
+                                productCodeController.value.text == &#39;0&#39;) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                  MySnackBar(
+                                      screenSize: MediaQuery.sizeOf(context),
+                                      isLandscape: isLandscape,
+                                      text:
+                                          &quot;Debe introducir una cantidad valida&quot;));
+
+                              return;
+                            }
+                            productController.createProduct(initProduct());
+                          })
+                      : Column(
+                          children: [
+                            MyButton.expandable(
+                                height: null,
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 12),
+                                text: &#39;Actualizar&#39;,
+                                fontSize: 20,
+                                onPressed: () async {
+                                  productController
+                                      .updateProduct(initProduct());
+                                }),
+                            SizedBox(
+                              height: 12,
+                            ),
+                            MyButton.expandable(
+                                textColor: AppColors.primaryDark,
+                                color: Colors.white,
+                                height: null,
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 12),
+                                text: &#39;Eliminar&#39;,
+                                fontSize: 20,
+                                onPressed: () async {
+                                  showDialog(
+                                      context: context,
+                                      builder: (context) =&gt; DeleteDialog(
+                                            onAccept: () async =&gt;
+                                                await productController
+                                                    .deleteProduct(
+                                                        product.value!.code),
+                                            text:
+                                                &#39;¿Está seguro que desea eliminar éste producto?&#39;,
+                                          ));
+                                })
+                          ],
+                        ),
+                ),
+                const SizedBox(height: 10),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  });
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">poscaja</a></li>
+    <li><a href="../../app_presentation_modules_products_views_product_view/app_presentation_modules_products_views_product_view-library.html">product_view</a></li>
+    <li><a href="../../app_presentation_modules_products_views_product_view/ProductView-class.html">ProductView</a></li>
+    <li class="self-crumb">build method</li>
+</ol>
+
+
+    <h5>ProductView class</h5>
+    <div id="dartdoc-sidebar-left-content"></div>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    poscaja
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+

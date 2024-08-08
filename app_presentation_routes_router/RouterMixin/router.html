@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the router property from the RouterMixin mixin, for the Dart programming language.">
+  <title>router property - RouterMixin mixin - router library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">poscaja</a></li>
+    <li><a href="../../app_presentation_routes_router/app_presentation_routes_router-library.html">app&#47;presentation&#47;routes&#47;router.dart</a></li>
+    <li><a href="../../app_presentation_routes_router/RouterMixin-mixin.html">RouterMixin</a></li>
+    <li class="self-crumb">router property</li>
+  </ol>
+  <div class="self-name">router</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="app_presentation_routes_router&#47;RouterMixin-mixin-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-property">router</span> property 
+</h1></div>
+
+
+        
+  <section id="getter">
+
+    <section class="multi-line-signature">
+      
+      <span class="returntype"><a href="https://pub.dev/documentation/go_router/14.2.0/go_router/GoRouter-class.html">GoRouter</a></span>
+      <span class="name ">router</span>
+      
+
+    </section>
+
+    
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">GoRouter get router {
+  if (_router != null) {
+    return _router!;
+  }
+
+  final routes = [
+    GoRoute(
+      name: Routes.login,
+      path: &#39;&#47;login&#39;,
+      builder: (_, __) =&gt; const LoginView(),
+    ),
+    GoRoute(
+      name: Routes.settingDatabaseStorage,
+      path: &#39;&#47;setting-database-storage&#39;,
+      builder: (_, __) =&gt; const SettingDatabaseStorageView(),
+    ),
+    GoRoute(
+      name: Routes.home,
+      path: &#39;&#47;&#39;,
+      builder: (_, __) =&gt; const HomeView(),
+    ),
+    GoRoute(
+      name: Routes.register,
+      path: &#39;&#47;register&#39;,
+      builder: (_, state) =&gt; const RegisterView(),
+    ),
+    GoRoute(
+      name: Routes.history,
+      path: &#39;&#47;history&#39;,
+      builder: (_, __) =&gt; const HistoryView(),
+    ),
+    GoRoute(
+      name: Routes.employees,
+      path: &#39;&#47;employees&#39;,
+      builder: (_, __) =&gt; const EmployeesView(),
+    ),
+    GoRoute(
+      name: Routes.addEmployee,
+      path: &#39;&#47;add-employee&#39;,
+      builder: (_, __) =&gt; const EmployeeView(),
+    ),
+    GoRoute(
+      name: Routes.editEmployee,
+      path: &#39;&#47;edit-employee&#47;:id&#39;,
+      builder: (_, state) =&gt; EmployeeView(
+        id: int.parse(state.pathParameters[&#39;id&#39;]!),
+      ),
+    ),
+    GoRoute(
+      name: Routes.products,
+      path: &#39;&#47;products&#39;,
+      builder: (_, __) =&gt; const ProductsView(),
+    ),
+    GoRoute(
+      name: Routes.addProduct,
+      path: &#39;&#47;add-product&#39;,
+      builder: (_, __) =&gt; const ProductView(),
+    ),
+    GoRoute(
+      name: Routes.coins,
+      path: &#39;&#47;coins&#39;,
+      builder: (_, __) =&gt; const CoinsView(),
+    ),
+    GoRoute(
+      name: Routes.addCoin,
+      path: &#39;&#47;add-coin&#39;,
+      builder: (_, __) =&gt; const CoinView(),
+    ),
+    &#47;&#47; GoRoute(
+    &#47;&#47;   name: Routes.editCoin,
+    &#47;&#47;   path: &#39;&#47;edit-coin&#47;:short_name&#39;,
+    &#47;&#47;   builder: (_, state) =&gt; CoinView(
+    &#47;&#47;     shortName: state.pathParameters[&#39;short_name&#39;],
+    &#47;&#47;   ),
+    &#47;&#47; ),
+    GoRoute(
+      name: Routes.paymentMethods,
+      path: &#39;&#47;payment-methods&#39;,
+      builder: (_, __) =&gt; const PaymentMethodsView(),
+    ),
+    GoRoute(
+      name: Routes.export,
+      path: &#39;&#47;export&#39;,
+      builder: (_, __) =&gt; const ExportView(),
+    ),
+    GoRoute(
+      name: Routes.about,
+      path: &#39;&#47;about&#39;,
+      builder: (_, __) =&gt; const AboutView(),
+    ),
+    GoRoute(
+      name: Routes.discounts,
+      path: &#39;&#47;discounts&#39;,
+      builder: (_, __) =&gt; const DiscountsView(),
+    ),
+    GoRoute(
+      name: Routes.billAdd,
+      path: &#39;&#47;bill-add&#39;,
+      builder: (_, __) =&gt; const AddBillView(),
+    ),
+    GoRoute(
+      name: Routes.billPay,
+      path: &#39;&#47;bill-pay&#39;,
+      builder: (_, __) =&gt; const BillPayView(),
+    ),
+  ];
+
+  final overrideRoutes = widget.overrideRoutes;
+  if (overrideRoutes?.isNotEmpty ?? false) {
+    final names = overrideRoutes!.map(
+      (e) =&gt; e.name,
+    );
+    routes.removeWhere(
+      (element) {
+        final name = element.name;
+        if (name != null) {
+          return names.contains(name);
+        }
+        return false;
+      },
+    );
+    routes.addAll(overrideRoutes);
+  }
+
+  final initialLocation = routes
+      .firstWhere(
+        (element) =&gt; element.name == _initialRouteName,
+        orElse: () =&gt; routes.first,
+      )
+      .path;
+
+  _router = GoRouter(
+    initialLocation: initialLocation,
+    routes: routes,
+  );
+  return _router!;
+}</code></pre>
+</section>
+
+  </section>
+
+
+</div> <!-- /.main-content -->
+
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+  <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">poscaja</a></li>
+    <li><a href="../../app_presentation_routes_router/app_presentation_routes_router-library.html">router</a></li>
+    <li><a href="../../app_presentation_routes_router/RouterMixin-mixin.html">RouterMixin</a></li>
+    <li class="self-crumb">router property</li>
+</ol>
+
+
+  <h5>RouterMixin mixin</h5>
+  <div id="dartdoc-sidebar-left-content"></div>
+</div><!--/.sidebar-offcanvas-->
+
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    poscaja
+      1.0.0+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
